@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script/script.js"></script>
+    <script type="text/javascript" src="script/buttonScript.js"></script>
+
+    <title>Escape from Tarkov</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__warp container">
+      <div class="logo">
+        <a class="logo__link" href="https://www.escapefromtarkov.com/">
+          <img class="logo__pic" src="img/tarkov_logo.png" alt="логотип">
+        </a>
+      </div>
+
+      <div class="birger-menu">
+        <input type="checkbox" id="checkbox" class="mobile-menu__checkbox">
+        <label for="checkbox" class="mobile-menu__btn">
+          <div class="mobile-menu__icon"></div>
+        </label>
+
+        <nav class="header-nav">
+          <ul class="header-nav__list">
+            <li class="header-nav__item">
+              <a href="#id-collimator">КОЛЛИМАТОРНЫЕ</a>
+                <ul class="collimator-menu dropdown-menu">
+                  <li class="collimator-menu__item dropdown-menu__item"><a href="#EKP-8-18">ЭКП-8-18/ЭКП-8-02</a></li>
+                  <li class="collimator-menu__item dropdown-menu__item"><a href="#OKP-07">ОКП-7</a></li>
+                  <li class="collimator-menu__item dropdown-menu__item"><a href="#PK-06">Беломо ПК-06</a></li>
+                  <li class="collimator-menu__item dropdown-menu__item"><a href="#Burris-FastFire-3">Burris FastFire 3</a></li>
+                  <li class="collimator-menu__item dropdown-menu__item"><a href="#Leupold-DeltaPoint-Reflex">Leupold DeltaPoint Reflex Sight</a></li>
+                  <li class="collimator-menu__item dropdown-menu__item"><a href="#ВОМЗ-Пилад-Р1х42-WEAVER">ВОМЗ Пилад Р1х42 "WEAVER"</a></li>
+                  <li class="collimator-menu__item dropdown-menu__item"><a href="#Walther-MRS">Walther MRS</a></li>
+                  <li class="collimator-menu__item dropdown-menu__item"><a href="#Aimpoint-Micro-T-1">Aimpoint Micro T-1</a></li>
+                  <li class="collimator-menu__item dropdown-menu__item"><a href="#Aimpoint-'COMP M4'">Aimpoint "COMP M4"</a></li>
+                  <li class="collimator-menu__item dropdown-menu__item"><a href="#Trijicon-RMR">Trijicon RMR</a></li>
+                  <li class="collimator-menu__item dropdown-menu__item"><a href="#Trijicon-SRS-02">Trijicon SRS-02</a></li>
+                  <li class="collimator-menu__item dropdown-menu__item"><a href="#Holosun-HS401G5">Holosun HS401G5</a></li>
+                  <li class="collimator-menu__item dropdown-menu__item"><a href="#Sig-Sauer-Romeo-4">Sig Sauer Romeo 4</a></li>
+                </ul>
+            </li>
+            <li class="header-nav__item">
+                <a href="#"><span>ГОЛОГРАФИЧЕСИКЕ</span></a>
+                <ul class="holographic-menu dropdown-menu">
+                  <li class="holographic-menu__item dropdown-menu__item"><a href="#">Валдай "1П87"</a></li>
+                  <li class="holographic-menu__item dropdown-menu__item"><a href="#">Eotech EXPS3</a></li>
+                  <li class="holographic-menu__item dropdown-menu__item"><a href="#">Eotech XPS3-0</a></li>
+                  <li class="holographic-menu__item dropdown-menu__item"><a href="#">Eotech XPS3-2</a></li>
+                  <li class="holographic-menu__item dropdown-menu__item"><a href="#">Eotech 553</a></li>
+                  <li class="holographic-menu__item dropdown-menu__item"><a href="#">Vortex Razor AMG UH-1</a></li>
+                </ul>
+            </li>
+            <li class="header-nav__item">
+                <a href="#"><span>ОПТИЧЕСКИЕ</span></a>
+                <ul class="optical-menu dropdown-menu">
+                  <li class="optical-menu__item dropdown-menu__item"><a href="#">Беломо ПСО 1 4x24</a></li>
+                  <li class="optical-menu__item dropdown-menu__item"><a href="#">Беломо ПСО 1М2 4x24</a></li>
+                  <li class="optical-menu__item dropdown-menu__item"><a href="#">Беломо ПСО 1М2-1 4х24</a></li>
+                  <li class="optical-menu__item dropdown-menu__item"><a href="#">Валдай "ПС-320" 1x/6x</a></li>
+                  <li class="optical-menu__item dropdown-menu__item"><a href="#">ПУ 3.5x для винтовки Мосина</a></li>
+                  <li class="optical-menu__item dropdown-menu__item"><a href="#">Trijicon ACOG 3.5х35</a></li>
+                  <li class="optical-menu__item dropdown-menu__item"><a href="#">Trijicon "ACOG TA01NSN" 4x32</a></li>
+                  <li class="optical-menu__item dropdown-menu__item"><a href="#">ELCAN SpecterDR 1x/4x</a></li>
+                  <li class="optical-menu__item dropdown-menu__item"><a href="#">Sig BRAVO4 4x30</a></li>
+                  <li class="optical-menu__item dropdown-menu__item"><a href="#">Primary Arms "Compact prism scope" 2.5x</a></li>
+                  <li class="optical-menu__item dropdown-menu__item"><a href="#">EOtech Vudu 1-6x</a></li>
+                  <li class="optical-menu__item dropdown-menu__item"><a href="#">Burris FullField TAC 30 1-4x24</a></li>
+                  <li class="optical-menu__item dropdown-menu__item"><a href="#">Nightforce ATACR 7-35x56</a></li>
+                  <li class="optical-menu__item dropdown-menu__item"><a href="#">Leupold Mark 4 LR 6.5-20х50</a></li>
+                  <li class="optical-menu__item dropdown-menu__item"><a href="#">Hensoldt FF 4-16х56</a></li>
+                  <li class="optical-menu__item dropdown-menu__item"><a href="#">March Tactical 3-24х42 FFP</a></li>
+                </ul>
+            </li>
+            <li class="header-nav__item">
+              <a href="#"><span>СПЕЦИАЛЬНЫЕ</span></a>
+              <ul class="special-menu dropdown-menu">
+                <li class="special-menu__item dropdown-menu__item"><a href="#">Eotech HHS-1</a></li>
+                <li class="special-menu__item dropdown-menu__item"><a href="#">Leupold Mark 4 HAMR 4х24</a></li>
+                <li class="special-menu__item dropdown-menu__item"><a href="#">НСПУ-М</a></li>
+                <li class="special-menu__item dropdown-menu__item"><a href="#">Armasight Vulcan MG bravo 3.5x</a></li>
+                <li class="special-menu__item dropdown-menu__item"><a href="#">Trijicon REAP-IR</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+      <main class="main container">
+        <section class="collimator">
+          <div class="divider">
+            <div class="divider__line">
+              <hr>
+            </div>
+            <div class="divider__name-sight" id="id-collimator">
+              <h1>Коллиматорные прицелы</h1>
+            </div>
+            <div class="divider__line">
+              <hr>
+            </div>
+          </div>
+
+          <div class="sight EKP-8-18" id="EKP-8-18">
+            <div class="sight__header col-12">
+              <span>Коллиматорный прицел ЭКП-8-18</span>
+            </div>
+              <div class="sight__left-slider col-12 col-lg-8">
+                <div id="slider_EKP-8-18">
+                  <div class="wrapper">
+                    <input checked type=radio class="slide1" name="slider" id="slide1011" />
+                    <input type=radio class="slide2" name="slider" id="slide1012" />
+                    <input type=radio class="slide3" name="slider" id="slide1013" />
+                    <input type=radio class="slide4" name="slider" id="slide1014" />
+                    <input type=radio class="slide5" name="slider" id="slide1015" />
+                    <input type=radio class="slide6" name="slider" id="slide1016" />
+
+                    <div class="slider-wrapper">
+                      <div class=inner>
+                        <article>
+                          <img src="img/Collimator/Кобра ЭКП-8-18_1.png" />
+                        </article>
+                        <article>
+                          <img src="img/Collimator/Кобра ЭКП-8-18_2.png" />
+                        </article>
+                        <article>
+                          <img src="img/Collimator/Кобра ЭКП-8-18_3.png" />
+                        </article>
+                        <article>
+                          <img src="img/Collimator/Кобра ЭКП-8-18_4.png" />
+                        </article>
+                        <article>
+                          <img src="img/Collimator/Кобра ЭКП-8-18_5.png" />
+                        </article>
+                        <article>
+                          <img src="img/Collimator/Кобра ЭКП-8-18_6.png" />
+                        </article>
+                      </div>
+                    </div>
+
+                    <div class="slider-prev-next-control">
+                      <label for=slide1011></label>
+                      <label for=slide1012></label>
+                      <label for=slide1013></label>
+                      <label for=slide1014></label>
+                      <label for=slide1015></label>
+                      <label for=slide1016></label>
+                    </div>
+                    <div class="slider-dot-control">
+                      <label for=slide1011></label>
+                      <label for=slide1012></label>
+                      <label for=slide1013></label>
+                      <label for=slide1014></label>
+                      <label for=slide1015></label>
+                      <label for=slide1016></label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="sight__right-info col-12 col-lg-4">
+                <span>Кобра - весьма популярный коллиматорный прицел среди силовых структур и гражданских стрелков. Разрабатывался для вооруженных сил РФ, однако на вооружение официально так и не был принят. Существует вариант прицела монтируемого на крепление типа "ласточкин хвост".</span>
+                <ul>
+                  <li>Размер: 1х1</li>
+                  <li>Вес: 0.273 кг</li>
+                  <li>Эргономика: <span style="color: red !important" >-6 (-7)</span></li>
+                  <li>Отдача: <span style="color: green !important">-1</span></li>
+                  <li>Прицельная дальность: 200</li>
+                  <li>Режимов работы: 4</li>
+                </ul>
+              </div>
+          </div>
+
+          <div class="sight OKP-07" id="OKP-07">
+            <div class="sight__header col-12">
+              <span>Коллиматорный прицел ОКП-7</span>
+            </div>
+            <div class="sight__left-slider col-12 col-lg-8">
+              <div id="slider_OKP-07">
+                <div class="wrapper">
+                  <input checked type=radio class="slide1" name="slider" id="slide1021" />
+                  <input type=radio class="slide2" name="slider" id="slide1022" />
+                  <input type=radio class="slide3" name="slider" id="slide1023" />
+                  <input type=radio class="slide4" name="slider" id="slide1024" />
+
+                  <div class="slider-wrapper">
+                    <div class=inner>
+                      <article>
+                        <img src="img/Collimator/ОКП-07_1.png" />
+                      </article>
+                      <article>
+                        <img src="img/Collimator/ОКП-07_2.png" />
+                      </article>
+                      <article>
+                        <img src="img/Collimator/ОКП-07_1.png" />
+                      </article>
+                      <article>
+                        <img src="img/Collimator/ОКП-07_2.png" />
+                      </article>
+                    </div>
+                  </div>
+
+                  <div class="slider-prev-next-control">
+                    <label for=slide1021></label>
+                    <label for=slide1022></label>
+                    <label for=slide1023></label>
+                    <label for=slide1024></label>
+                  </div>
+                  <div class="slider-dot-control">
+                    <label for=slide1021></label>
+                    <label for=slide1022></label>
+                    <label for=slide1023></label>
+                    <label for=slide1024></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sight__right-info col-12 col-lg-4">
+              <span>Основная особенность прицела - крепление рефлектора без механической оправы, перекрывающей заметную часть секторов обстрела. Защита рефлектора в экстремальных условиях обеспечивается тонким и прочным металлическим козырьком, практически не мешающим при стрельбе. Существует вариант прицела монтируемого на крепление типа "ласточкин хвост".</span>
+              <ul>
+                <li>Размер: 1х1</li>
+                <li>Вес: 0.255 кг</li>
+                <li>Эргономика: <span style="color: red !important" >-6 (-7)</span></li>
+                <li>Отдача: 0 <span style="color: green !important">(-1)</span></li>
+                <li>Прицельная дальность: 250</li>
+                <li>Режимов работы: 1</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="sight PK-06" id="PK-06">
+            <div class="sight__header col-12">
+              <span>Коллиматорный прицел Беломо ПК-06</span>
+            </div>
+            <div class="sight__left-slider col-12 col-lg-8">
+              <div id="slider_PK-06">
+                <div class="wrapper">
+                  <input checked type=radio class="slide1" name="slider" id="slide1031" />
+                  <input type=radio class="slide2" name="slider" id="slide1032" />
+                  <input type=radio class="slide3" name="slider" id="slide1033" />
+                  <input type=radio class="slide4" name="slider" id="slide1034" />
+
+                  <div class="slider-wrapper">
+                    <div class=inner>
+                      <article>
+                        <img src="img/Collimator/Беломa ПК-06_1.png" />
+                      </article>
+                      <article>
+                        <img src="img/Collimator/Беломa ПК-06_2.png" />
+                      </article>
+                      <article>
+                        <img src="img/Collimator/Беломa ПК-06_3.png" />
+                      </article>
+                      <article>
+                        <img src="img/Collimator/Беломa ПК-06_4.png" />
+                      </article>
+                    </div>
+                  </div>
+
+                  <div class="slider-prev-next-control">
+                    <label for=slide1031></label>
+                    <label for=slide1032></label>
+                    <label for=slide1033></label>
+                    <label for=slide1034></label>
+                  </div>
+                  <div class="slider-dot-control">
+                    <label for=slide1031></label>
+                    <label for=slide1032></label>
+                    <label for=slide1033></label>
+                    <label for=slide1034></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="sight__right-info col-12 col-lg-4">
+              <span>Прицел коллиматорный открытого типа с автоматической регулировкой яркости прицельной марки и переключением типа прицельной марки.</span>
+              <ul>
+                <li>Размер: 1х1</li>
+                <li>Вес: 0.09 кг</li>
+                <li>Эргономика: <span style="color: red !important" >-1</span></li>
+                <li>Прицельная дальность: 100</li>
+                <li>Режимов работы: 3</li>
+              </ul>
+            </div>
+          </div>  
+
+              <div class="sight Burris-FastFire-3" id="Burris-FastFire-3">
+                <div class="sight__header col-12">
+                  <span>Коллиматорный прицел Burris FastFire 3</span>
+                </div>
+                <div class="sight__left-slider col-12 col-lg-8">
+                  <div id="slider_Burris-FastFire-3">
+                    <div class="wrapper">
+                      <input checked type=radio class="slide1" name="slider" id="slide1041" />
+                      <input type=radio class="slide2" name="slider" id="slide1042" />
+                      <input type=radio class="slide3" name="slider" id="slide1043" />
+                      <input type=radio class="slide4" name="slider" id="slide1044" />
+                      <input type=radio class="slide5" name="slider" id="slide1045" />
+
+                      <div class="slider-wrapper">
+                        <div class=inner>
+                          <article>
+                            <img src="img/tarkov_logo.png" />
+                          </article>
+                          <article>
+                            <img src="img/tarkov_logo.png" />
+                          </article>
+                          <article>
+                            <img src="img/tarkov_logo.png" />
+                          </article>
+                          <article>
+                            <img src="img/tarkov_logo.png" />
+                          </article>
+                          <article>
+                            <img src="img/tarkov_logo.png" />
+                          </article>
+                        </div>
+                      </div>
+
+                      <div class="slider-prev-next-control">
+                        <label for=slide1041></label>
+                        <label for=slide1042></label>
+                        <label for=slide1043></label>
+                        <label for=slide1044></label>
+                        <label for=slide1045></label>
+                      </div>
+                      <div class="slider-dot-control">
+                        <label for=slide1041></label>
+                        <label for=slide1042></label>
+                        <label for=slide1043></label>
+                        <label for=slide1044></label>
+                        <label for=slide1045></label>
+                      </div>
+                      </div>
+                      </div>
+                  </div>
+                  <div class="sight__right-info col-12 col-lg-4">
+                    <span>Легкий и прочный, FastFire дает четкую ярко-красную точку на цель, чтобы предоставить вам преимущество в скорости и точности. Может использоваться в качестве основного или вспомогательного прицела.</span>
+                    <ul>
+                      <li>Размер: 1х1</li>
+                      <li>Вес: 0.025 кг</li>
+                      <li>Устанавливается в рейде:  <span style="color: green !important">Да</span></li>
+                      <li>Эргономика: <span style="color: red !important" >-1</span></li>
+                      <li>Точность: 0</li>
+                      <li>Прицельная дальность: 100</li>
+                      <li>Режимов работы: 1</li>
+                    </ul>
+                  </div>
+              </div>  
+
+              <div class="sight Leupold-DeltaPoint-Reflex" id="Leupold-DeltaPoint-Reflex">
+                <div class="sight__header col-12">
+                  <span>Коллиматорный прицел Leupold DeltaPoint Reflex Sight</span>
+                </div>
+                <div class="sight__left-slider col-12 col-lg-8">
+                  <div id="slider_Leupold-DeltaPoint-Reflex">
+                    <div class="wrapper">
+                      <input checked type=radio class="slide1" name="slider" id="slide1051" />
+                      <input type=radio class="slide2" name="slider" id="slide1052" />
+                      <input type=radio class="slide3" name="slider" id="slide1053" />
+                      <input type=radio class="slide4" name="slider" id="slide1054" />
+                      <input type=radio class="slide5" name="slider" id="slide1055" />
+
+                      <div class="slider-wrapper">
+                        <div class=inner>
+                          <article>
+                            <img src="img/tarkov_logo.png" />
+                          </article>
+                          <article>
+                            <img src="img/tarkov_logo.png" />
+                          </article>
+                          <article>
+                            <img src="img/tarkov_logo.png" />
+                          </article>
+                          <article>
+                            <img src="img/tarkov_logo.png" />
+                          </article>
+                          <article>
+                            <img src="img/tarkov_logo.png" />
+                          </article>
+                        </div>
+                      </div>
+
+                      <div class="slider-prev-next-control">
+                        <label for=slide1051></label>
+                        <label for=slide1052></label>
+                        <label for=slide1053></label>
+                        <label for=slide1054></label>
+                        <label for=slide1055></label>
+                      </div>
+                      <div class="slider-dot-control">
+                        <label for=slide1051></label>
+                        <label for=slide1052></label>
+                        <label for=slide1053></label>
+                        <label for=slide1054></label>
+                        <label for=slide1055></label>
+                      </div>
+                      </div>
+                      </div>
+                  </div>
+                  <div class="sight__right-info col-12 col-lg-4">
+                    <span>Компактный коллиматорный прицел DeltaPoint Reflex Sight от компании Leupold практически не имеет ограничений в области применения. Изначально планировавшийся для установки на помповые гладкоствольные ружья для соревнований и практической стрельбы, он неплохо показал себя на широком спектре оружия. От ружья и пистолеты до платформы AR, как основной или вспомогательный прицел, он будет показывать отличный результат.</span>
+                    <ul>
+                      <li>Размер: 1х1</li>
+                      <li>Вес: 0.053 кг</li>
+                      <li>Устанавливается в рейде:  <span style="color: green !important">Да</span></li>
+                      <li>Эргономика: <span style="color: red !important" >-1</span></li>
+                      <li>Точность: 0</li>
+                      <li>Прицельная дальность: 150</li>
+                      <li>Режимов работы: 1</li>
+                    </ul>
+                  </div>
+              </div> 
+
+          <div class="sight ВОМЗ-Пилад-Р1х42-'WEAVER'" id="ВОМЗ-Пилад-Р1х42-WEAVER">
+            <div class="sight__header col-12">
+              <span>Коллиматорный прицел ВОМЗ Пилад Р1х42 "WEAVER"</span>
+            </div>
+            <div class="sight__left-slider col-12 col-lg-8">
+              <div id="slider_ВОМЗ-Пилад-Р1х42-'WEAVER'">
+                <div class="wrapper">
+                  <input checked type=radio class="slide1" name="slider" id="slide1061" />
+                  <input type=radio class="slide2" name="slider" id="slide1062" />
+                  <input type=radio class="slide3" name="slider" id="slide1063" />
+                  <input type=radio class="slide4" name="slider" id="slide1064" />
+
+                  <div class="slider-wrapper">
+                    <div class=inner>
+                      <article>
+                        <img src="img/Collimator/BOM3 Пилад P1X42 WEAVER_1.png" />
+                      </article>
+                      <article>
+                        <img src="img/Collimator/BOM3 Пилад P1X42 WEAVER_2.png" />
+                      </article>
+                      <article>
+                        <img src="img/Collimator/BOM3 Пилад P1X42 WEAVER_3.png" />
+                      </article>
+                      <article>
+                        <img src="img/Collimator/BOM3 Пилад P1X42 WEAVER_4.png" />
+                      </article>
+                    </div>
+                  </div>
+
+                  <div class="slider-prev-next-control">
+                    <label for=slide1061></label>
+                    <label for=slide1062></label>
+                    <label for=slide1063></label>
+                    <label for=slide1064></label>
+                  </div>
+                  <div class="slider-dot-control">
+                    <label for=slide1061></label>
+                    <label for=slide1062></label>
+                    <label for=slide1063></label>
+                    <label for=slide1064></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sight__right-info col-12 col-lg-4">
+              <span>Прицел коллиматорный открытого типа предназначен для точной наводки спортивного и охотнечьего оружия по различным целям, в том числе и быстродвижущихся.</span>
+              <ul>
+                <li>Размер: 1х1</li>
+                <li>Вес: 0.16 кг</li>
+                <li>Эргономика: <span style="color: red !important" >-3</span></li>
+                <li>Прицельная дальность: 200</li>
+                <li>Режимов работы: 3</li>
+              </ul>
+            </div>
+          </div> 
+
+          <div class="sight Walther-MRS" id="Walther-MRS">
+            <div class="sight__header col-12">
+              <span>Коллиматорный прицел Walther MRS</span>
+            </div>
+            <div class="sight__left-slider col-12 col-lg-8">
+              <div id="slider_Walther-MRS">
+                <div class="wrapper">
+                  <input checked type=radio class="slide1" name="slider" id="slide1071" />
+                  <input type=radio class="slide2" name="slider" id="slide1072" />
+                  <input type=radio class="slide3" name="slider" id="slide1073" />
+                  <input type=radio class="slide4" name="slider" id="slide1074" />
+                  <input type=radio class="slide5" name="slider" id="slide1075" />
+
+                  <div class="slider-wrapper">
+                    <div class=inner>
+                      <article>
+                        <img src="img/Collimator/Walther MRS_1.png" />
+                      </article>
+                      <article>
+                        <img src="img/Collimator/Walther MRS_2.png" />
+                      </article>
+                      <article>
+                        <img src="img/Collimator/Walther MRS_3.png" />
+                      </article>
+                      <article>
+                        <img src="img/Collimator/Walther MRS_4.png" />
+                      </article>
+                      <article>
+                        <img src="img/Collimator/Walther MRS_5.png" />
+                      </article>
+                    </div>
+                  </div>
+
+                  <div class="slider-prev-next-control">
+                    <label for=slide1071></label>
+                    <label for=slide1072></label>
+                    <label for=slide1073></label>
+                    <label for=slide1074></label>
+                    <label for=slide1075></label>
+                  </div>
+                  <div class="slider-dot-control">
+                    <label for=slide1071></label>
+                    <label for=slide1072></label>
+                    <label for=slide1073></label>
+                    <label for=slide1074></label>
+                    <label for=slide1075></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sight__right-info col-12 col-lg-4">
+              <span>Коллиматорный прицел Walther Multi-Reticle Sight (MRS) позволяет выбирать между двумя точками и двумя сетками с настраиваемыми уровнями яркости. Дешевый, точный (но при переключении между точками и сетками нужно пристреливать заново), компактный и экономно расходующий батарею - но не слишком надежный и прочный.</span>
+              <ul>
+                <li>Размер: 1х1</li>
+                <li>Вес: 0.113 кг</li>
+                <li>Эргономика: <span style="color: red !important" >-3</span></li>
+                <li>Прицельная дальность: 200</li>
+                <li>Режимов работы: 4</li>
+              </ul>
+            </div>
+          </div> 
+
+              <div class="sight Aimpoint-Micro-T-1" id="Aimpoint-Micro-T-1">
+                <div class="sight__header col-12">
+                  <span>Коллиматорный прицел Aimpoint Micro T-1</span>
+                </div>
+                <div class="sight__left-slider col-12 col-lg-8">
+                  <div id="slider_Aimpoint-Micro-T-1">
+                    <div class="wrapper">
+                      <input checked type=radio class="slide1" name="slider" id="slide1081" />
+                      <input type=radio class="slide2" name="slider" id="slide1082" />
+                      <input type=radio class="slide3" name="slider" id="slide1083" />
+
+                      <div class="slider-wrapper">
+                        <div class=inner>
+                          <article>
+                            <img src="img/tarkov_logo.png" />
+                          </article>
+                          <article>
+                            <img src="img/tarkov_logo.png" />
+                          </article>
+                          <article>
+                            <img src="img/tarkov_logo.png" />
+                          </article>
+                          <article>
+                            <img src="img/tarkov_logo.png" />
+                          </article>
+                          <article>
+                            <img src="img/tarkov_logo.png" />
+                          </article>
+                        </div>
+                      </div>
+
+                      <div class="slider-prev-next-control">
+                        <label for=slide1081></label>
+                        <label for=slide1082></label>
+                        <label for=slide1083></label>
+                      </div>
+                      <div class="slider-dot-control">
+                        <label for=slide1081></label>
+                        <label for=slide1082></label>
+                        <label for=slide1083></label>
+                      </div>
+                      </div>
+                      </div>
+                  </div>
+                  <div class="sight__right-info col-12 col-lg-4">
+                    <span>Компактный коллиматорный прицел Micro T-1 от компании Aimpoint разработан для установки на любой тип огнестрельного оружия и даже на луки. Легкий, компактный, прочный.</span>
+                    <ul>
+                      <li>Размер: 1х1</li>
+                      <li>Вес: 0.084 кг</li>
+                      <li>Эргономика: <span style="color: red !important" >-1</span></li>
+                      <li>Прицельная дальность: 150</li>
+                      <li>Режимов работы: 1</li>
+                    </ul>
+                  </div>
+              </div> 
+
+          <div class="sight Aimpoint-'COMP M4'" id="Aimpoint-'COMP M4'">
+            <div class="sight__header col-12">
+              <span>Коллиматорный прицел Aimpoint "COMP M4"</span>
+            </div>
+            <div class="sight__left-slider col-12 col-lg-8">
+              <div id="slider_Aimpoint-'COMP M4'">
+                <div class="wrapper">
+                  <input checked type=radio class="slide1" name="slider" id="slide1091" />
+                  <input type=radio class="slide2" name="slider" id="slide1092" />
+
+                  <div class="slider-wrapper">
+                    <div class=inner>
+                      <article>
+                        <img src="img/Collimator/Aimpoint COMP M4_1.png" />
+                      </article>
+                      <article>
+                        <img src="img/Collimator/Aimpoint COMP M4_2.png" />
+                      </article>
+                    </div>
+                  </div>
+
+                  <div class="slider-prev-next-control">
+                    <label for=slide1091></label>
+                    <label for=slide1092></label>
+                  </div>
+                  <div class="slider-dot-control">
+                    <label for=slide1091></label>
+                    <label for=slide1092></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sight__right-info col-12 col-lg-4">
+              <span>Коллиматорный прицел "COMP M4" производства компании Aimpoint. Изначально разрабатывался для армии и спецподразделений, однако более чем успешно может использоваться и на охотничьем оружии, особенно если на нем смонтирована планка Weaver-Picattiny.</span>
+              <ul>
+                <li>Размер: 1х1</li>
+                <li>Вес: 0.37 кг</li>
+                <li>Эргономика: <span style="color: red !important">-2</span></li>
+                <li>Прицельная дальность: </li>
+                <li>Режимов работы: 1</li>
+              </ul>
+            </div>
+          </div> 
+
+          <div class="sight Trijicon-RMR" id="Trijicon-RMR">
+            <div class="sight__header col-12">
+              <span>Коллиматорный прицел Trijicon RMR</span>
+            </div>
+            <div class="sight__left-slider col-12 col-lg-8">
+              <div id="slider_Trijicon-RMR">
+                <div class="wrapper">
+                  <input checked type=radio class="slide1" name="slider" id="slide1101" />
+                  <input type=radio class="slide2" name="slider" id="slide1102" />
+
+                  <div class="slider-wrapper">
+                    <div class=inner>
+                      <article>
+                        <img src="img/Collimator/Trijicon RMR_1.png" />
+                      </article>
+                      <article>
+                        <img src="img/Collimator/Trijicon RMR_2.png" />
+                      </article>
+                    </div>
+                  </div>
+
+                  <div class="slider-prev-next-control">
+                    <label for=slide1101></label>
+                    <label for=slide1102></label>
+                  </div>
+                  <div class="slider-dot-control">
+                    <label for=slide1101></label>
+                    <label for=slide1102></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sight__right-info col-12 col-lg-4">
+              <span>RMR (Ruggedized Miniature Reflex) - прочный, компактный коллиматорный прицел. Может использоваться в качестве основого или вспомогательного прицела. Для установки на направляющую типа Weaver - требуется соотсветсвующая база.</span>
+              <ul>
+                <li>Размер: 1х1</li>
+                <li>Вес: 0.025 кг</li>
+                <li>Эргономика: <span style="color: red !important" >-1</span></li>
+                <li>Прицельная дальность: 150</li>
+                <li>Режимов работы: 1</li>
+              </ul>
+            </div>
+          </div> 
+
+          <div class="sight Trijicon-SRS-02" id="Trijicon-SRS-02">
+            <div class="sight__header col-12">
+              <span>Коллиматорный прицел Trijicon SRS-02</span>
+            </div>
+            <div class="sight__left-slider col-12 col-lg-8">
+              <div id="slider_Trijicon-SRS-02">
+                <div class="wrapper">
+                  <input checked type=radio class="slide1" name="slider" id="slide1111" />
+                  <input type=radio class="slide2" name="slider" id="slide1112" />
+                        <input type=radio class="slide3" name="slider" id="slide1013" />
+  
+                        <div class="slider-wrapper">
+                          <div class=inner>
+                            <article>
+                              <img src="img/tarkov_logo.png" />
+                            </article>
+                            <article>
+                              <img src="img/tarkov_logo.png" />
+                            </article>
+                          </div>
+                        </div>
+  
+                        <div class="slider-prev-next-control">
+                          <label for=slide1111></label>
+                          <label for=slide1112></label>
+                        </div>
+                        <div class="slider-dot-control">
+                          <label for=slide1111></label>
+                          <label for=slide1112></label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sight__right-info col-12 col-lg-4">
+                    <span></span>
+                    <ul>
+                      <li>Размер: 1х1</li>
+                      <li>Вес: 0.390 кг</li>
+                      <li>Эргономика: <span style="color: red !important" >-1</span></li>
+                      <li>Прицельная дальность: 200</li>
+                      <li>Режимов работы: 1</li>
+                    </ul>
+                  </div>
+          </div>
+
+          <div class="sight Holosun-HS401G5" id="Holosun-HS401G5">
+            <div class="sight__header col-12">
+              <span>Коллиматорный прицел Holosun HS401G5</span>
+            </div>
+            <div class="sight__left-slider col-12 col-lg-8">
+              <div id="slider_Holosun-HS401G5">
+                <div class="wrapper">
+                  <input checked type=radio class="slide1" name="slider" id="slide1121" />
+                  <input type=radio class="slide2" name="slider" id="slide1122" />
+                
+                  <div class="slider-wrapper">
+                    <div class=inner>
+                      <article>
+                        <img src="img/Collimator/HS401G5_1.png" />
+                      </article>
+                      <article>
+                        <img src="img/Collimator/HS401G5_2.png" />
+                      </article>
+                    </div>
+                  </div>
+
+                  <div class="slider-prev-next-control">
+                    <label for=slide1121></label>
+                    <label for=slide1122></label>
+                  </div>
+                  <div class="slider-dot-control">
+                    <label for=slide1121></label>
+                    <label for=slide1122></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sight__right-info col-12 col-lg-4">
+              <span>Коллиматорный прицел со встроенным блоком ЛЦУ, производства "Holosun".</span>
+              <ul>
+                <li>Размер: 1х1</li>
+                <li>Вес: 0.36 кг</li>
+                <li>Эргономика: <span style="color: red !important" >-4</span></li>
+                <li>Прицельная дальность: 300</li>
+                <li>Режимов работы: 2</li>
+              </ul>
+            </div>
+          </div> 
+
+              <div class="sight Sig-Sauer-Romeo-4" id="Sig-Sauer-Romeo-4">
+                <div class="sight__header col-12">
+                  <span>Коллиматорный прицел Sig Sauer Romeo 4</span>
+                </div>
+                <div class="sight__left-slider col-12 col-lg-8">
+                  <div id="slider_sight-Sig-Sauer-Romeo-4">
+                    <div class="wrapper">
+                      <input checked type=radio class="slide1" name="slider" id="slide1131" />
+                      <input type=radio class="slide2" name="slider" id="slide1132" />
+                      <input type=radio class="slide3" name="slider" id="slide1133" />
+
+                      <div class="slider-wrapper">
+                        <div class=inner>
+                          <article>
+                            <img src="img/tarkov_logo.png" />
+                          </article>
+                          <article>
+                            <img src="img/tarkov_logo.png" />
+                          </article>
+                          <article>
+                            <img src="img/tarkov_logo.png" />
+                          </article>
+                          <article>
+                            <img src="img/tarkov_logo.png" />
+                          </article>
+                          <article>
+                            <img src="img/tarkov_logo.png" />
+                          </article>
+                        </div>
+                      </div>
+
+                      <div class="slider-prev-next-control">
+                        <label for=slide1131></label>
+                        <label for=slide1132></label>
+                        <label for=slide1133></label>
+                      </div>
+                      <div class="slider-dot-control">
+                        <label for=slide1131></label>
+                        <label for=slide1132></label>
+                        <label for=slide1133></label>
+                      </div>
+                      </div>
+                      </div>
+                  </div>
+                  <div class="sight__right-info col-12 col-lg-4">
+                    <span>Компактный коллиматорный прицел Micro T-1 от компании Aimpoint разработан для установки на любой тип огнестрельного оружия и даже на луки. Легкий, компактный, прочный.</span>
+                    <ul>
+                      <li>Размер: 1х1</li>
+                      <li>Вес: 0.084 кг</li>
+                      <li>Эргономика: <span style="color: red !important" >-1</span></li>
+                      <li>Прицельная дальность: 150</li>
+                      <li>Режимов работы: 1</li>
+                    </ul>
+                  </div>
+              </div> 
+          </section>
+      </main>
+
+      <footer>
+      </footer>
+</body>
+</html>
